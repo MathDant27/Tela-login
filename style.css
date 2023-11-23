@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 body {
     margin: 0;
+    font-family: "montserrat";
+}
+
+body * {
+    box-sizing: border-box;
 }
 
 .main-login {
@@ -22,6 +29,7 @@ body {
 
 .left-login > h1 {
     color: #77ffc0;
+    font-size: 3vw;
 }
 
 .right-login {
@@ -30,6 +38,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.left-login-image {
+    width: 35vw;
 }
 
 .card-login {
@@ -56,6 +68,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     margin: 10px 0px;
+    width: 100%;
 }
 
 .textfield > input {
@@ -94,4 +107,34 @@ body {
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vh;
+    }
+    .card-login {
+        width: 90%;
+    }
 }
